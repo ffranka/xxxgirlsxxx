@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "TimesNewArial";
+  src: url("../fonts/TimesNewArialVF.woff2");
+  font-variation-settings: "srff" 0, "ital" 0, "wght" 50;
+}
+
+/* Reset CSS */
+
+html, body {
+  background: #232323;
+  color: rgb(255, 95, 95);
+  z-index: 1;
+  font-size: 3 vw;
+  padding: 0;
+  margin: 0;
+  font-family: "TimesNewArial";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+marquee {
+  margin-top: 10px;
+  font-size: 5vw;
+}
+
+.child {
+  display: inline-block;
+} 
+
+.first{
+  margin-left: 30px;
+}
+
+.second{
+  margin-left: 300px;
+}
+
+.content {
+  margin-left: 720px;
+  color: white;
+}
+
+a, button, input, label {
+  cursor: pointer
+}
+
+/* Apply color to all unvisited links */
+a:link {
+  color: rgb(255, 95, 95);
+}
+
+/* Apply color to visited links */
+a:visited {
+  color: rgb(122, 78, 254);
+}
+
+/* Apply color when hovering over a link */
+a:hover {
+  color: red;
+}
+
+/* Apply color when a link is being clicked */
+a:active {
+  color: rgb(0, 255, 106);
+}
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Your CSS */
+
+.video-container {
+  margin-top: 10px; /* Abstand zum oberen Rand */
+  margin-left: 50px; /* Abstand zur linken Seite */
+  width: 50%; /* Video nimmt die Hälfte des Bildschirms ein */
+  position: relative;
+}
+
+.title {
+  color: white;
+  font-size: 2vw;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:500px){
+  .box{
+    background: blue;
+  }
+}
